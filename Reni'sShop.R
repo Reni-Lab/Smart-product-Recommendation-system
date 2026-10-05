@@ -4,7 +4,7 @@ con <- dbConnect(RMySQL::MySQL(),
                  dbname = "shoppingdb",
                  host = "localhost",
                  user = "root",
-                 password = "Harshita@123"
+                 password = "Harshita@123")
 df <- dbGetQuery(con, "SELECT * FROM CustomerData")
 head(df)
 str(df)
